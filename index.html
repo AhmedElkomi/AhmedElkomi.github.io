@@ -13,14 +13,13 @@
       background: #0f172a;
       color: #f1f5f9;
       line-height: 1.6;
-      padding: 0;
     }
     header {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      height: 100vh;
+      min-height: 100vh;
       background: linear-gradient(135deg, #1e3a8a, #0ea5e9);
       text-align: center;
       color: white;
@@ -37,9 +36,10 @@
     nav {
       background: #1e293b;
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
       padding: 1rem;
-      gap: 2rem;
+      gap: 1.5rem;
     }
     nav a {
       color: #93c5fd;
@@ -65,7 +65,7 @@
     }
     .projects {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 2rem;
     }
     .card {
@@ -101,6 +101,7 @@
       display: flex;
       gap: 1rem;
       align-items: center;
+      flex-wrap: wrap;
     }
     .icons a {
       color: #38bdf8;
@@ -128,6 +129,22 @@
       text-align: center;
       padding: 2rem;
       color: #64748b;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+      .resume-button {
+        width: 100%;
+        text-align: center;
+      }
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   </style>
 </head>
