@@ -3,96 +3,151 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My AI Projects | ESL Translator & More</title>
+  <title>Ahmed Elkomi | AI Engineer Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-      color: #f1f1f1;
+      background: #0f172a;
+      color: #f1f5f9;
       line-height: 1.6;
-      padding: 2rem;
+      padding: 0;
     }
     header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #1e3a8a, #0ea5e9);
       text-align: center;
-      margin-bottom: 2rem;
+      color: white;
+      padding: 2rem;
     }
-    h1 {
-      font-size: 3rem;
-      background: -webkit-linear-gradient(#00c6ff, #0072ff);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+    header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0.5rem;
     }
-    .subtitle {
-      font-size: 1.2rem;
-      color: #ccc;
+    header p {
+      font-size: 1.3rem;
+      max-width: 600px;
+    }
+    nav {
+      background: #1e293b;
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+      gap: 2rem;
+    }
+    nav a {
+      color: #93c5fd;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover {
+      color: #60a5fa;
+    }
+    .section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: #38bdf8;
+    }
+    .bio {
+      font-size: 1.1rem;
+      color: #cbd5e1;
     }
     .projects {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 2rem;
-      margin-top: 3rem;
     }
     .card {
-      background: #1a1a2e;
+      background: #1e293b;
       padding: 1.5rem;
       border-radius: 1rem;
-      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
       transition: transform 0.3s ease;
     }
     .card:hover {
-      transform: scale(1.05);
+      transform: translateY(-5px);
     }
-    .card h2 {
-      color: #00c6ff;
+    .card h3 {
+      color: #60a5fa;
       margin-bottom: 0.5rem;
     }
     .card p {
       font-size: 0.95rem;
-      color: #ccc;
+      color: #94a3b8;
     }
     .card a {
       display: inline-block;
       margin-top: 1rem;
-      color: #00c6ff;
-      text-decoration: none;
+      color: #38bdf8;
       font-weight: 600;
+    }
+    .highlight {
+      border: 2px solid #38bdf8;
+      background: #1e40af;
     }
     footer {
       text-align: center;
-      margin-top: 4rem;
-      font-size: 0.9rem;
-      color: #aaa;
+      padding: 2rem;
+      color: #64748b;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>My AI Projects</h1>
-    <p class="subtitle">Exploring the intersection of machine learning, vision, and real-world impact</p>
+    <h1>Ahmed Elkomi</h1>
+    <p>AI Engineer | Real-Time Vision | Sign Language Advocate</p>
   </header>
 
-  <section class="projects">
-    <div class="card">
-      <h2>ESL Real-Time Translator</h2>
-      <p>A real-time Egyptian Sign Language translator using MediaPipe Holistic, Bi-LSTM, ONNX Runtime, and PyQt6. Translates gestures to Arabic with TTS and context-aware phrase construction.</p>
-      <a href="projects/esl-translator.html">Read more →</a>
-    </div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-    <div class="card">
-      <h2>Coming Soon</h2>
-      <p>Another AI or IoT based project will be added here soon. Stay tuned!</p>
-      <a href="#">Under Construction</a>
+  <section class="section" id="about">
+    <h2>About Me</h2>
+    <p class="bio">
+      I’m an AI engineer passionate about building real-time computer vision applications that make a difference. My work blends machine learning, gesture recognition, and natural language understanding to improve accessibility and human-computer interaction. Currently focused on optimizing gesture-to-speech translation systems for the deaf and hard-of-hearing community.
+    </p>
+  </section>
+
+  <section class="section" id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card highlight">
+        <h3>ESL Real-Time Translator 🔥</h3>
+        <p>Real-time sign language recognition using Mediapipe + BiLSTM + ONNX + PyQt6. Outputs Arabic text and speech, supports phrase merging and subtitle-style display. My most advanced accessibility AI project to date.</p>
+        <a href="projects/esl-translator.html">Read more →</a>
+      </div>
+
+      <div class="card">
+        <h3>Coming Soon</h3>
+        <p>Another AI/IoT project will appear here. Stay tuned!</p>
+        <a href="#">Under Construction</a>
+      </div>
     </div>
   </section>
 
+  <section class="section" id="contact">
+    <h2>Contact</h2>
+    <p class="bio">
+      Reach me at: <strong>ahmedelkomi [at] gmail [dot] com</strong><br>
+      GitHub: <a href="https://github.com/AhmedElkomi">github.com/AhmedElkomi</a>
+    </p>
+  </section>
+
   <footer>
-    © 2025 Your Name | Built with 💻 + ☕
+    &copy; 2025 Ahmed Elkomi | Built with 💻 and ☕
   </footer>
 </body>
 </html>
