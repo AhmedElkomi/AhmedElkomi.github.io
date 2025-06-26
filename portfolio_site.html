@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My AI Projects | ESL Translator & More</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #f1f1f1;
+      line-height: 1.6;
+      padding: 2rem;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    h1 {
+      font-size: 3rem;
+      background: -webkit-linear-gradient(#00c6ff, #0072ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .subtitle {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    .card {
+      background: #1a1a2e;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card h2 {
+      color: #00c6ff;
+      margin-bottom: 0.5rem;
+    }
+    .card p {
+      font-size: 0.95rem;
+      color: #ccc;
+    }
+    .card a {
+      display: inline-block;
+      margin-top: 1rem;
+      color: #00c6ff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    footer {
+      text-align: center;
+      margin-top: 4rem;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My AI Projects</h1>
+    <p class="subtitle">Exploring the intersection of machine learning, vision, and real-world impact</p>
+  </header>
+
+  <section class="projects">
+    <div class="card">
+      <h2>ESL Real-Time Translator</h2>
+      <p>A real-time Egyptian Sign Language translator using MediaPipe Holistic, Bi-LSTM, ONNX Runtime, and PyQt6. Translates gestures to Arabic with TTS and context-aware phrase construction.</p>
+      <a href="projects/esl-translator.html">Read more →</a>
+    </div>
+
+    <div class="card">
+      <h2>Coming Soon</h2>
+      <p>Another AI or IoT based project will be added here soon. Stay tuned!</p>
+      <a href="#">Under Construction</a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Your Name | Built with 💻 + ☕
+  </footer>
+</body>
+</html>
